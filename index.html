@@ -1,0 +1,103 @@
+<html>
+
+  <head>
+
+     <style>
+        #myInputBox{
+          color: red;
+          background: yellow;
+          width: 190px;
+          height: 50px;
+          font-size: 25px;
+          text-align:center;
+        }
+        #myButton{
+          width: 120px;
+          height: 50px;
+          font-size: 25px;
+          color: blue;
+          background: pink;
+          border-radius: 20px;
+          cursor:pointer;
+        }
+        
+        #myTable{
+          border-collapse:collapse;
+          width: 350px;
+        }
+        #myTable th{
+          border:1px solid black;
+          padding:5px;
+          background : lightblue;
+        }
+        #myTable td{
+          border:1px solid black;
+          padding:5px;
+        }
+        #myTable tr:nth-child(odd) td{
+          background : lightgreen;
+        }
+        #myTable tr:hover td{
+           background :yellow;
+           cursor : pointer;
+        }
+     </style>
+
+     <script>
+        function abc(content){
+           document.getElementById("myInputBox").value = content;
+        }
+     </script>
+
+  </head>
+
+  <body>
+    
+     <input type="text" value="-" id="myInputBox" /> 
+     <input type="button" value="click me" id="myButton" onclick="abc('Hello World')" />
+     
+     <br><br>
+
+     <table id="myTable">
+       <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+       </tr>
+       <tr>
+          <td>1</td>
+          <td>John</td>
+          <td>35</td>
+       </tr>
+       <tr>
+          <td>2</td>
+          <td>A san</td>
+           <td>30</td>
+       </tr>
+       <tr>
+          <td>3</td>
+          <td>LIM</td>
+          <td>18</td>
+       </tr>
+       <tr>
+          <td>3</td>
+          <td>LIM</td>
+          <td>18</td>
+       </tr>
+     </table>
+ 
+  </body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
